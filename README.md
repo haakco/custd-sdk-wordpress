@@ -17,13 +17,13 @@ repos are public). Add the mirror **and** the SDK repo so the transitive
     { "type": "vcs", "url": "https://github.com/haakco/custd-sdk" }
   ],
   "require": {
-    "haakco/custd-wordpress": "^3.0"
+    "haakco/custd-wordpress": "^1.3"
   }
 }
 ```
 
 ```bash
-composer require haakco/custd-wordpress:^3.0
+composer require haakco/custd-wordpress:^1.3
 ```
 
 For WordPress activation, symlink the installed package
@@ -37,7 +37,7 @@ built release artifact that includes `vendor/`.
 Create a tenant-bound producer client with the SDK-owned setup helper:
 
 ```bash
-go run github.com/haakco/custd-sdk-go/v3/cmd/custd-sdk-setup@latest \
+go run github.com/haakco/custd-sdk-go/v2/cmd/custd-sdk-setup@latest \
   --base-url=https://custd.com \
   --admin-url=https://custd.com \
   --admin-token="$CUSTD_ADMIN_TOKEN" \
